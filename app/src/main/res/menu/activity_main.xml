@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_1"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:title="Add"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_2"
+        android:icon="@android:drawable/ic_input_get"
+        android:orderInCategory="101"
+        android:title="Get"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_sub"
+        android:icon="@android:drawable/ic_input_delete"
+        android:orderInCategory="102"
+        android:title="Sub"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/submenu_item_1"
+                android:title="Sub Item 1"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:orderInCategory="200"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/submenu_item_2"
+                android:title="Sub Item 2"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:orderInCategory="201"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
