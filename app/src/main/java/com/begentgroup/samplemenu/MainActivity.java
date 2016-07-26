@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.submenu_item_2 :
                 Toast.makeText(this, item.getTitle(), Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.menu_check :
+                item.setChecked(!item.isChecked());
+                return true;
+            case R.id.menu_check_1 :
+            case R.id.menu_check_2 :
+            case R.id.menu_check_3 :
+                item.setChecked(true);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

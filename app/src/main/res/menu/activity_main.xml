@@ -37,4 +37,29 @@
                 app:showAsAction="never" />
         </menu>
     </item>
+    <item
+        android:id="@+id/menu_check"
+        android:title="check"
+        android:checkable="true"
+        android:orderInCategory="120"
+        app:showAsAction="never"/>
+    <group
+        android:checkableBehavior="single"
+        android:orderInCategory="130">
+        <item
+            android:id="@+id/menu_check_1"
+            android:title="Check 1"
+            android:orderInCategory="131"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_check_2"
+            android:title="Check 2"
+            android:orderInCategory="132"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_check_3"
+            android:title="Check 3"
+            android:orderInCategory="133"
+            app:showAsAction="never" />
+    </group>
 </menu>
